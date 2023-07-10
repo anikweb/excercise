@@ -66,7 +66,7 @@ console.log(multiply(3, 5))
 
 Write a function named getLargestNumber that takes in two numbers as parameters. The function should return the larger number using short-circuiting and logical operators (&&, ||, ??). */
 
-const getLargestNumber = (num1, num2) => num1 > num2 ? num1 : num2;
+const getLargestNumber = (num1, num2) => num1 > num2 || num2 === undefined ? num1 : num2;
 // Output
 console.log(getLargestNumber(10,100));
 
